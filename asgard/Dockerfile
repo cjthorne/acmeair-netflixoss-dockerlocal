@@ -30,7 +30,7 @@ RUN sudo -u mongodb /usr/bin/mongod -f /etc/mongodb.conf --fork &&\
 RUN cd /opt/tomcat/webapps &&\
   mkdir ROOT &&\
   cd ROOT &&\
-  wget -qO app.war https://acmeair.ci.cloudbees.com/job/asgard-etiport/lastSuccessfulBuild/artifact/target/asgard.war &&\
+  wget -qO app.war https://github.com/cjthorne/asgard/releases/download/asgard-dockerlocal-1.0.0/asgard.war &&\
   jar xf app.war &&\
   rm app.war
 

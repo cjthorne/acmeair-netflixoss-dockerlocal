@@ -18,7 +18,7 @@ FROM acmeair/tomcat
 RUN cd /opt/tomcat/webapps &&\
   mkdir ROOT &&\
   cd ROOT &&\
-  wget -qO app.war https://acmeair.ci.cloudbees.com/job/acmeair-netflix-astyanax/lastSuccessfulBuild/artifact/acmeair-webapp-tc7/build/libs/acmeair-webapp-tc7-0.1.0-SNAPSHOT.war &&\
+  wget -qO app.war https://github.com/cjthorne/acmeair-netflix/releases/download/v1.0.1/acmeair-webapp-tc7-0.1.0-SNAPSHOT.war &&\
   jar xf app.war &&\
   rm app.war
 
